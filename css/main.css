@@ -1,0 +1,124 @@
+/* Resetting default styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+/* Body & Main Content */
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+    line-height: 3em;
+    font-size: 16px;
+    background-color: #E8EDED;
+}
+
+.container {
+    margin: 2vh auto;
+    max-width: 50%;
+}
+
+/* Header & Nav */
+
+.head-container {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    border: 3px #C3323E solid;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.navigation ul {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 0;
+}
+
+.navigation li, .logo {
+    margin: 2em 1.2em;
+}
+
+.navigation a, .logo a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: black;
+}
+
+
+/* FAQ Section Styling */
+
+.faq {
+    border: 3px #C3323E solid;
+    background-color: #C2868B;
+    color: #1B302F;
+    padding: 20px;
+    user-select: none;
+    margin: 4vh 0;
+    border-radius: 20px;
+    height: 60vh;
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 2vh;
+    padding: 2.4vh;
+    font-family: 'Kanit', sans-serif;
+    border: 3px #C3323E solid;
+}
+
+details p {
+    font-size: 1.6em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+details a {
+    text-decoration: none;
+}
+
+summary {
+    font-size: 2.4em;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    height: 10vh;
+    font-size: 2em;
+    width: 100vw;
+    border: 3px #C3323E solid;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    align-self: center;
+}
+
+/* FAQ Animation */
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    from {
+        opacity: 0; margin-top: -10px;
+    }
+    to {
+        opacity: 1; margin-top: 0;
+    }
+}
+
